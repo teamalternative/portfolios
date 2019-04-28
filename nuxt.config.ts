@@ -2,10 +2,6 @@ import NuxtConfiguration from '@nuxt/config'
 
 const config: NuxtConfiguration = {
   mode: 'spa',
-
-  /*
-   ** Headers of the page
-   */
   head: {
     title: 'Tride',
     meta: [
@@ -15,30 +11,14 @@ const config: NuxtConfiguration = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-
-  /*
-   ** Customize the progress-bar color
-   */
   loading: { color: '#fff' },
-
-  /*
-   ** Global CSS
-   */
   css: [],
-
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [
     {
       src: '~plugins/buefy.ts',
       ssr: false,
     }
   ],
-
-  /*
-   ** Nuxt.js modules
-   */
   modules: [
     'nuxt-buefy', '@nuxtjs/pwa', '@nuxtjs/google-gtag',
   ],
@@ -46,10 +26,6 @@ const config: NuxtConfiguration = {
   'google-gtag': {
     id: 'UA-138501746-1',
   },
-
-  /*
-   ** Build configuration
-   */
   build: {
     postcss: {
       preset: {
@@ -58,11 +34,7 @@ const config: NuxtConfiguration = {
         }
       }
     },
-    /*
-     ** You can extend webpack config here
-     */
     extend(cfg, ctx) {
-      // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         cfg.module!.rules.push({
           enforce: 'pre',
