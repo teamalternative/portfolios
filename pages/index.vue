@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="contain">
+      <Header />
       <FirstView />
       <Projects />
       <WhoWeAre />
@@ -16,6 +17,7 @@ import Contact from '~/components/organisms/Contact.vue'
 import FirstView from '../components/organisms/FirstView.vue'
 import Projects from '../components/organisms/Projects.vue'
 import WhoWeAre from '../components/organisms/WhoWeAre.vue'
+import Header from '../components/organisms/Header.vue'
 import Footer from '../components/organisms/Footer.vue'
 @Component({
   components: {
@@ -23,18 +25,9 @@ import Footer from '../components/organisms/Footer.vue'
     FirstView,
     Projects,
     WhoWeAre,
+    Header,
     Footer
   }
 })
 export default class extends Vue {}
 </script>
-
-<style lang="scss" scoped>
-.contain {
-  div {
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-  }
-}
-</style>
