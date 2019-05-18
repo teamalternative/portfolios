@@ -1,30 +1,39 @@
 <template>
-  <div class="contact">
+  <div class="contact is-widescreen">
     <section class="section">
       <div class="container">
         <div class="contact-caption has-text-centered">
           <h2
-            class="lato is-size-4-desktop is-size-5-touch has-text-weight-bold"
+            class="lato is-size-1-desktop is-size-5-touch has-text-weight-bold is-italic has-text-white"
           >
-            <span class="is-inline-block">Contact Us</span>
+            Contact Us
           </h2>
+          <p class="has-text-white">
+            制作案件のご依頼について、お気軽にご相談下さい。<br />
+            具体的な制作期間や制作イメージ（参考URL）などを併記頂ければ、より詳細な御見積りをお出し致します。<br />
+            協業・取材といったご提案もお待ちしております。
+          </p>
         </div>
       </div>
     </section>
     <section>
-      <form name="contact" method="POST" netlify>
-        <b-field label="お名前">
-          <b-input value="Kevin Garvey"></b-input>
+      <form class="contact" name="contact" method="POST" netlify>
+        <b-field label="お名前" name="name" custom-class="has-text-white">
+          <b-input />
         </b-field>
-        <b-field label="会社名">
-          <b-input value="Kevin Garvey"></b-input>
+        <b-field label="会社名" name="organization" custom-class="has-text-white">
+          <b-input />
         </b-field>
-        <b-field label="Email" type="is-danger" message="This email is invalid">
-          <b-input type="email" value="john@" maxlength="30"> </b-input>
+        <b-field label="メールアドレス" name="email" custom-class="has-text-white">
+          <b-input type="email" maxlength="30" />
         </b-field>
-        <b-field label="お名前">
-          <b-input value="Kevin Garvey"></b-input>
+        <b-field label="メールアドレス（確認用）" name="confirmation" custom-class="has-text-white">
+          <b-input type="email" maxlength="30" />
         </b-field>
+        <b-field label="メッセージ" name="message" custom-class="has-text-white">
+          <b-input type="textarea" />
+        </b-field>
+        <b-button rounded class="has-text-weight-bold is-italic">Send</b-button>
       </form>
     </section>
   </div>
