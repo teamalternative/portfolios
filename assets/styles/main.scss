@@ -1,0 +1,12 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+$text: #353535;
+$light: #808080;
+$border: #f5f5f5;
+$background: #00081A;
+
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

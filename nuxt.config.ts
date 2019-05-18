@@ -47,4 +47,16 @@ const config: NuxtConfiguration = {
   }
 }
 
+module.exports = {
+  css: [
+    '~/assets/styles/main.scss',
+  ],
+  modules: [
+    ['nuxt-buefy', {
+      css: false,
+      // materialDesignIcons: false
+    }],
+  ],
+}
+
 export default config
