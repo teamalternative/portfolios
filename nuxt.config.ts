@@ -3,7 +3,7 @@ import NuxtConfiguration from '@nuxt/config'
 const config: NuxtConfiguration = {
   mode: 'spa',
   head: {
-    title: 'Tride',
+    title: 'TeamAlternative',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
