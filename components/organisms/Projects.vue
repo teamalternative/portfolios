@@ -8,9 +8,18 @@
       </h1>
       <div class="projects">
         <div class="columns">
-          <ProjectOne />
-          <ProjectTwo />
-          <ProjectThree />
+          <Project
+            message="テスト"
+            imgPath="../../assets/images/project01.png"
+          />
+          <Project
+            message="テスト"
+            imgPath="../../assets/images/project02.png"
+          />
+          <Project
+            message="テスト"
+            imgPath="../../assets/images/project03.png"
+          />
         </div>
       </div>
     </section>
@@ -18,17 +27,19 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'nuxt-property-decorator'
-import ProjectOne from '../molecules/ProjectOne.vue'
-import ProjectTwo from '../molecules/ProjectTwo.vue'
-import ProjectThree from '../molecules/ProjectThree.vue'
+import { Vue, Component, Prop } from 'nuxt-property-decorator'
+import Project from '../molecules/Project.vue'
 
 @Component({
   components: {
-    ProjectOne,
-    ProjectTwo,
-    ProjectThree
+    Project
   }
 })
-export default class Projects extends Vue {}
+export default class Projects extends Vue {
+  @Prop()
+    message!: string;
+
+  @Prop()
+    imgPath!: string;
+}
 </script>
