@@ -1,11 +1,20 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
-
+$family-primary: "Lato", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 $text: #353535;
 $light: #808080;
 $border: #f5f5f5;
 $background: #00081A;
 
+body {
+  position: relative;
+}
+.is-align-center {
+  align-items: center;
+}
+.is-justify-center {
+  justify-content: center;
+}
 
 // Import Bulma and Buefy styles
 @import "~bulma";
