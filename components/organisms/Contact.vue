@@ -21,16 +21,32 @@
         <b-field label="お名前" name="name" custom-class="has-text-white">
           <b-input />
         </b-field>
-        <b-field label="会社名" name="organization" custom-class="has-text-white">
+        <b-field
+          label="会社名"
+          name="organization"
+          custom-class="has-text-white"
+        >
           <b-input />
         </b-field>
-        <b-field label="メールアドレス" name="email" custom-class="has-text-white">
+        <b-field
+          label="メールアドレス"
+          name="email"
+          custom-class="has-text-white"
+        >
           <b-input type="email" maxlength="30" />
         </b-field>
-        <b-field label="メールアドレス（確認用）" name="confirmation" custom-class="has-text-white">
+        <b-field
+          label="メールアドレス（確認用）"
+          name="confirmation"
+          custom-class="has-text-white"
+        >
           <b-input type="email" maxlength="30" />
         </b-field>
-        <b-field label="メッセージ" name="message" custom-class="has-text-white">
+        <b-field
+          label="メッセージ"
+          name="message"
+          custom-class="has-text-white"
+        >
           <b-input type="textarea" />
         </b-field>
         <b-button rounded class="has-text-weight-bold is-italic">Send</b-button>

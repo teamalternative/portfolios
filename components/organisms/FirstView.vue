@@ -2,9 +2,7 @@ import { Component } from 'nuxt-property-decorator';
 <template>
   <div class="firstview">
     <div class="top-caption is-flex is-align-center">
-      <h1
-        class="is-italic has-text-weight-bold has-text-left"
-      >
+      <h1 class="is-italic has-text-weight-bold has-text-left">
         We are<br />
         Alternative<br />
         Team<br />
@@ -32,7 +30,7 @@ export default class FirstView extends Vue {}
     height: 100%;
     z-index: 1;
     h1 {
-      font-size: 100px!important;
+      font-size: 100px !important;
     }
   }
   .top-content {
@@ -63,7 +61,7 @@ export default class FirstView extends Vue {}
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       left: 0;
