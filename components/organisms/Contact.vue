@@ -1,10 +1,10 @@
 <template>
-  <div class="contact is-widescreen">
+  <div class="contact">
     <section class="section">
       <div class="container">
         <div class="contact-caption has-text-centered">
           <h2
-            class="lato is-size-1-desktop is-size-5-touch has-text-weight-bold is-italic has-text-white"
+            class="lato is-size-1-desktop is-size-3-touch is-margin-bottom-m has-text-weight-bold is-italic has-text-white"
           >
             Contact Us
           </h2>
@@ -49,7 +49,9 @@
         >
           <b-input type="textarea" />
         </b-field>
-        <b-button rounded class="has-text-weight-bold is-italic">Send</b-button>
+        <div class="has-text-centered">
+          <b-button class="has-text-weight-bold is-italic">Send</b-button>
+        </div>
       </form>
     </section>
   </div>
@@ -62,8 +64,26 @@ import { Vue, Component } from 'nuxt-property-decorator'
 export default class Contact extends Vue {}
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .contact {
+  min-height: 100vh;
+  padding: 0 4%;
   background-color: black;
+  button {
+    color: white!important;
+    border: 0!important;
+    border-radius: 0!important;
+    background-color: transparent!important;
+    font-size: 48px;
+    transition: .4s;
+    &:hover {
+      border-bottom: 1px solid #fff!important;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    min-height: 80px;
+  }
 }
 </style>

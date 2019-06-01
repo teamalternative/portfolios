@@ -15,6 +15,27 @@ body {
 .is-justify-center {
   justify-content: center;
 }
+.is-margin {
+  &-bottom {
+    &-s {
+      margin-bottom: 12px;
+    }
+    &-m {
+      margin-bottom: 24px;
+    }
+    &-l {
+      margin-bottom: 48px;
+    }
+  }
+}
+input, textarea {
+  background-color: transparent!important;
+  border: 0!important;
+  border-bottom: 1px solid #fff!important;
+  border-radius: 0!important;
+  caret-color: white!important;
+  color: white!important;
+}
 
 // Import Bulma and Buefy styles
 @import "~bulma";

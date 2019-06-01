@@ -30,7 +30,7 @@ export default class FirstView extends Vue {}
     height: 100%;
     z-index: 1;
     h1 {
-      font-size: 100px !important;
+      font-size: 100px;
     }
   }
   .top-content {
@@ -43,7 +43,7 @@ export default class FirstView extends Vue {}
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    background-image: url('~assets/images/firstview-min.jpg');
+    background-image: url('~assets/images/firstview.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
