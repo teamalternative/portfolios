@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "nuxt": "^2.6.0",
     "nuxt-buefy": "^0.3.5",
     "nuxt-property-decorator": "^2.1.3",
